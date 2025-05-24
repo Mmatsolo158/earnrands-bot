@@ -6,7 +6,7 @@ from flask import Flask, request
 
 # Configuration
 BOT_TOKEN = os.getenv('7835854387:AAH4K9VvV7Zk2EX-YLEj04ydHKsawux-I5s')
-PAYFAST_ID = os.getenv('PAYFAST_ID')
+PAYFAST_ID = os.getenv('300')
 ADMIN_ID = os.getenv('6315924441')
 
 bot = telebot.TeleBot(BOT_TOKEN)
@@ -33,5 +33,5 @@ def start(message):
 
 if __name__ == '__main__':
     from threading import Thread
-    Thread(target=app.run, kwargs={'host':'0.0.0.0','port':3000}).start()
+    Thread(target=app.run, kwargs={'host':'0.0.0.0','port':300}).start()
     bot.polling()
