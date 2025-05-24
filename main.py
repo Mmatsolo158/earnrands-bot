@@ -5,9 +5,9 @@ import sqlite3
 from flask import Flask, request
 
 # Configuration
-BOT_TOKEN = os.getenv('BOT_TOKEN')
+BOT_TOKEN = os.getenv('7835854387:AAH4K9VvV7Zk2EX-YLEj04ydHKsawux-I5s')
 PAYFAST_ID = os.getenv('PAYFAST_ID')
-ADMIN_ID = os.getenv('ADMIN_ID')
+ADMIN_ID = os.getenv('6315924441')
 
 bot = telebot.TeleBot(BOT_TOKEN)
 app = Flask(__name__)
